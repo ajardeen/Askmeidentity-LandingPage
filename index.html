@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Askmeidentity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .checked {
+        color: orange;
+      }
+      .hero-section {
+        background-image: url("./assects/hero-BACKGROUND.png");
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="">
+    <!-- navigation -->
+    <nav class="flex justify-between items-center">
+      <span>
+        <img src="./assects/Askmeidentity 2.png" alt="logo" class="w-20 h-10" />
+      </span>
+      <span class="flex gap-3 invisible md:visible">
+        <span class="relative">
+          <img src="./assects/nav-Icon3.png" alt="navicon" class="size-5" />
+          <p
+            class="text-xs absolute -top-2 -right-2 bg-[#2AAA94] text-white rounded-full px-[5px] py-[1px]"
+          >
+            0
+          </p>
+        </span>
+        <img src="./assects/nav-Icon1.png" alt="navicon" class="size-5" />
+        <img src="./assects/nav-Icon2.png" alt="navicon" class="size-5" />
+      </span>
+      <div>
+        <a href="#" class="text-gray-500 underline underline-offset-1">Login</a>
+        <button
+          class="bg-gradient-to-br from-[#083F9B] to-[#7F56D9] px-3 py-1 text-white rounded-sm text-sm"
+        >
+          Signup
+        </button>
+      </div>
+    </nav>
+    <!-- hero banner start here  -->
+    <section class="hero-section">
+      <div class="bg-gradient-to-r from-[#04016C] to-[#4A16BD] text-white">
+        <!-- left  -->
+        <div class="flex flex-col gap-8 pl-3 py-5 relative">
+          <img
+            src="./assects/Ellipse 8321.png"
+            alt="eclipse image"
+            class="absolute left-0 -top-20"
+          />
+          <div class="flex flex-col gap-2">
+            <p class="text-xs space-x-3 opacity-60">
+              Successful coaches are visionaries
+            </p>
+            <h1 class="text-4xl font-bold">
+              Good
+              <span class="text-[#0E38CD]">coaching</span>
+              is good teaching & nothing else.
+            </h1>
+          </div>
+          <div class="flex text-xs items-center gap-3">
+            <button class="border rounded-md px-4 py-3">View Courses</button>
+            <a href="#">Get Free Consultation</a>
+          </div>
+
+          <div>
+            <div class="relative w-fit">
+              <input
+                type="text"
+                placeholder="What do you want to learn today?"
+                class="w-80 placeholder:text-xs placeholder:text-black pb-1 h-9 rounded-md pl-4"
+              />
+              <span class="absolute top-0 right-0">
+                <button
+                  class="flex justify-center items-center gap-1 border rounded-lg px-4 py-2 bg-gradient-to-br from-[#3023B2] to-[#7F56D9]"
+                >
+                  <img
+                    src="./assects/white-search.svg"
+                    alt="search"
+                    class="size-4"
+                  />
+                  <span class="text-[0.6em] font-bold">Search</span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- right  -->
+        <div class="relative overflow-hidden h-[450px]">
+          <img
+            src="./assects/Ellipse 8324.png"
+            alt="eclipse background"
+            class="absolute"
+          />
+          <span class="flex items-center absolute top-0 gap-2">
+            <img src="./assects/bar-icon.png" alt="bar image" class="h-20" />
+            <div class="text-[9px] w-36">
+              <h6 class="font-bold">Shyam</h6>
+              <p>
+                In a coaching role, you ask the questions and rely more on your
+                staff, who become the experts, to provide the information.
+              </p>
+              <p class="text-blue-600">4.9</p>
+            </div>
+          </span>
+          <span class="absolute -top-12 right-0">
+            <img
+              src="./assects/brunette-woman-hugging-laptop_1-removebg.png"
+              alt="image"
+              class="bg-transparent h-[500px]"
+            />
+          </span>
+        </div>
+      </div>
+      <!-- hero banner2 start here -->
+      <div
+        class="bg-[#2E08C7] flex gap-5 p-5 items-center justify-center w-[100%]"
+      >
+        <img
+          class="w-10 h-3"
+          src="./assects/spotify-brand.png"
+          alt="brand image"
+        />
+        <img
+          class="w-10 h-3"
+          src="./assects/amazon-brand.png"
+          alt="brand image"
+        />
+        <img
+          class="w-10 h-3"
+          src="./assects/spotify-brand.png"
+          alt="brand image"
+        />
+        <img
+          class="w-10 h-3"
+          src="./assects/cisco-brand.png"
+          alt="brand image"
+        />
+        <img
+          class="w-10 h-3"
+          src="./assects/logitech-brand.png"
+          alt="brand image"
+        />
+        <img
+          class="w-10 h-3"
+          src="./assects/amazon-brand.png"
+          alt="brand image"
+        />
+      </div>
+    </section>
+
+    <!-- Featured Course  -->
+    <div class="flex flex-col items-center mt-5">
+      <header class="font-bold text-center flex justify-center">
+        <div>
+          <img
+            class="size-12 relative -left-36"
+            src="assects/Ellipse 118.svg"
+            alt="ring"
+          />
+        </div>
+        <div>
+          <h2 class="text-2xl">
+            Featured <span class="text-blue-500"> Course</span>
+          </h2>
+          <p class="text-sm tracking-widest font-medium">
+            THE FEATURED COURSES ARE WE INVENTED OUR TEACHING PART
+          </p>
+        </div>
+      </header>
+      <!-- cards banner  -->
+      <div
+        class="grid grid-cols-1 gap-10 place-items-center md:px-40 py-20 md:grid-cols-3"
+      >
+        <!-- 1  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img1.png" alt="img1" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>1,957 Students</p>
+              <p>01h 59m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              Motion Graphics: Create a Nice Typography Animation
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+        <!-- 2  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img2.png" alt="img2" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>9,575 Students</p>
+              <p>01h 59m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              Advance PHP knowledge with JS to make smart web
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+        <!-- 3  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img3.png" alt="img1" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>2,957 Students</p>
+              <p>02h 49m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              Education Software and PHP and JS System Script
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+        <!-- 4  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img4.png" alt="img4" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>5,457 Students</p>
+              <p>01h 49m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              The Complete Financial Analyst Training & Investing
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+        <!-- 5  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img5.png" alt="img5" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>595 Students</p>
+              <p>01h 49m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              Marketing 2023: Complete Guide To Instagram Growth
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+        <!-- 6  -->
+        <div class="rounded-lg shadow-md w-[20rem]">
+          <img src="assects/img6.png" alt="img6" />
+          <div class="text-xs px-3 flex flex-col text-start gap-5">
+            <span class="flex justify-between mt-8">
+              <p>458 Students</p>
+              <p>03h 00m</p>
+            </span>
+            <h1 class="font-bold text-base w-[80%]">
+              Learn 3D Modelling and Design for Beginners
+            </h1>
+            <span class="flex justify-between font-bold py-4 px-2">
+              <p class="text-base">Rs.499</p>
+              <img src="assects/trolley.png" alt="trolley" class="size-3" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <button class="bg-blue-700 text-white py-3 px-5 rounded-xl mb-20">
+        Explore courses
+      </button>
+    </div>
+    <!-- why learn banner  -->
+    <div
+      class="relative bg-blue-400 text-white flex flex-col items-center pb-20"
+    >
+      <header class="py-20 md:w-[30%] w-[80%]">
+        <h1
+          class="md:text-start pl-5 text-2xl text-center md:text-3xl font-bold"
+        >
+          Why <span class="text-blue-800">learn</span> with our courses?
+        </h1>
+        <p class="text-center">
+          We are providing the best courses and top classes And extradinery
+          placement training.....
+        </p>
+      </header>
+
+      <div class="md:flex md:justify-around items-center justify-center">
+        <!-- side design  -->
+        <div class="absolute size-32 top-20 left-0 flex invisible md:visible">
+          <img
+            class="absolute left-0"
+            src="assects/curve/Ellipse 8323.png"
+            alt=""
+          />
+          <img
+            class="absolute top-4 left-"
+            src="assects/curve/Rectangle 8680.png"
+            alt=""
+          />
+          <img
+            class="absolute left-4 w-60"
+            src="assects/curve/Rectangle 8682.png"
+            alt=""
+          />
+          <img
+            class="absolute -top-5 left-7"
+            src="assects/curve/Rectangle 8681.png"
+            alt=""
+          />
+        </div>
+        <!-- 1 -->
+        <div
+          class="gap-4 md:px-20 font-bold text-center flex flex-col justify-center items-center"
+        >
+          <img src="assects/Icon1.svg" alt="1" />
+          <p class="text-lg">01.Learn</p>
+          <p>
+            Learn continually. There is always <br />
+            "one more thing"to learn.
+          </p>
+        </div>
+        <img
+          class="rotate-90 md:rotate-180 ml-44 md:ml-0"
+          src="assects/vertical line.png"
+          alt="line"
+        />
+        <!-- 2 -->
+        <div
+          class="gap-4 px-20 font-bold text-center flex flex-col justify-center items-center"
+        >
+          <img src="assects/Icon2.svg" alt="1" />
+          <p class="text-lg">02.Graduate</p>
+          <p>
+            Be bold,be courageous, <br />
+            be your best.
+          </p>
+        </div>
+        <img
+          class="rotate-90 md:rotate-180 ml-44 md:ml-0"
+          src="assects/vertical line.png"
+          alt="line"
+        />
+        <!-- 3 -->
+        <div
+          class="gap-4 px-20 font-bold text-center flex flex-col justify-center items-center"
+        >
+          <img src="assects/Icon3.svg" alt="1" />
+          <p class="text-lg">03.Work</p>
+          <p>
+            Great companies are built in<br />
+            the office,with hard work put <br />
+            in by team.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- top categories  -->
+    <div class="flex flex-col items-center bg-[#D9ECFF] pb-20">
+      <header class="py-20 md:w-[30%] w-[80%]">
+        <h1 class="text-center text-3xl font-bold">
+          Top <span class="text-blue-800">Categories</span>
+        </h1>
+        <p class="text-center">100+ unique online course list design</p>
+      </header>
+      <!-- cards  -->
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-1 md:gap-3">
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a1.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            Digital <br />
+            Marketing
+          </h1>
+          <p>25 Courses</p>
+        </div>
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a2.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            Web <br />
+            Development
+          </h1>
+          <p>16 Courses</p>
+        </div>
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a3.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            Art & <br />
+            Humanities
+          </h1>
+          <p>76 Courses</p>
+        </div>
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a4.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            Personal <br />
+            Development
+          </h1>
+          <p>22 Courses</p>
+        </div>
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a5.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            IT and <br />
+            Software
+          </h1>
+          <p>110 Courses</p>
+        </div>
+        <div
+          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+        >
+          <img class="size-14 md:size-16" src="assects/a6.svg" alt="1" />
+          <h1 class="text-sm md:text-xl">
+            Graphic <br />
+            Design
+          </h1>
+          <p>25 Courses</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- subscribe banner  -->
+    <div class="md:py-10 w-[100%]">
+      <div
+        class="text-white bg-indigo-600 flex md:justify-end md:gap-x-10 pt-5 md:pt-28 md:mr-5 rounded-r-lg md:pr-10"
+      >
+        <!-- left  -->
+        <div class="w-40 h-64 relative invisible md:visible">
+          <img
+            class="size-10 absolute top-0 left-0"
+            src="assects/p1.svg"
+            alt="photo"
+          />
+          <img
+            class="size-10 absolute top-32 right-0"
+            src="assects/p2.svg"
+            alt="photo"
+          />
+          <img
+            class="size-10 absolute bottom-0 left-0"
+            src="assects/p3.svg"
+            alt="photo"
+          />
+          <img
+            class="absolute top-0 -right-20 size-14"
+            src="assects/Polygon 8.png"
+            alt="tra"
+          />
+        </div>
+        <!-- center sub  -->
+        <div
+          class="text-center w-[20rem] md:w-[42rem] grid gap-3 md:place-items-center"
+        >
+          <h1 class="font-bold text-2xl md:text-4xl">
+            Subscribe For Get Update <br />
+            Every New Courses
+          </h1>
+          <p class="text-sm w-[100%]">
+            20k+ students daily learn with Eduvi. Subscribe for new courses.
+          </p>
+          <div class="flex">
+            <input
+              class="backdrop-blur-md bg-white/30 placeholder-white pl-4 h-10 md:h-14 pr-6 md:pr-36 py-3 rounded-l-lg"
+              type="text"
+              placeholder="enter your email"
+            />
+            <button
+              class="bg-blue-800 h-10 md:h-14 px-4 md:px-9 py-3 rounded-r-xl flex justify-center items-center"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <!-- right  -->
+        <div class="w-40 h-64 relative invisible md:visible">
+          <img
+            class="size-10 absolute top-0 right-0"
+            src="assects/p4.svg"
+            alt="photo"
+          />
+          <img
+            class="size-10 absolute top-28 left-0"
+            src="assects/p5.svg"
+            alt="photo"
+          />
+          <img
+            class="size-10 absolute bottom-0 right-0"
+            src="assects/p6.svg"
+            alt="photo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- video area  -->
+    <div class="grid place-items-center py-32">
+      <img
+        class="size-10 -top-10 md:-top-20 right-40 md:right-[22rem] relative"
+        src="assects/Polygon 8.png"
+        alt="poly"
+      />
+      <img
+        class="size-10 -top-5 md:-top-10 left-32 md:left-[23rem] relative"
+        src="assects/Polygon 7.svg"
+        alt="poly"
+      />
+      <span class="relative border">
+        <img
+          class="w-[20rem] md:w-[40rem]"
+          src="assects/video photo.png"
+          alt="video"
+        />
+        <img
+          class="absolute left-32 md:left-72 top-12 md:top-32 size-20 md:size-24"
+          src="assects/play button.svg"
+          alt="playbtn"
+        />
+        <img
+          class="size-14 md:size-40 absolute bottom-0 md:bottom-0 -right-3 md:-right-20"
+          src="assects/banner_right.png.svg"
+          alt="design"
+        />
+      </span>
+    </div>
+
+    <!-- testimonial -->
+    <div class="flex flex-col items-center bg-[#D9ECFF] md:pb-20">
+      <header class="py-20 md:w-[30%] w-[100%]">
+        <h1 class="text-blue-800 my-7 text-center text-3xl font-bold">
+          Testimonials
+        </h1>
+        <p class="text-center font-bold">What our student say about us</p>
+      </header>
+      <section class="flex flex-col gap-7">
+        <div
+          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
+        >
+          <img
+            src="./assects/photo last.png"
+            alt="profile"
+            class="w-9 h-10 absolute -top-5 left-32"
+          />
+          <p>
+            Such an amazing trainer and easily understand the entire syllabus,
+            and the guidence will be super and good to the way of explaning
+          </p>
+
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+        <div
+          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
+        >
+          <img
+            src="./assects/photo last.png"
+            alt="profile"
+            class="w-9 h-10 absolute -top-5 left-32"
+          />
+          <p>
+            Such an amazing trainer and easily understand the entire syllabus,
+            and the guidence will be super and good to the way of explaning
+          </p>
+
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+        <div
+          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
+        >
+          <img
+            src="./assects/photo last.png"
+            alt="profile"
+            class="w-9 h-10 absolute -top-5 left-32"
+          />
+          <p>
+            Such an amazing trainer and easily understand the entire syllabus,
+            and the guidence will be super and good to the way of explaning
+          </p>
+
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <section
+        class="grid bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 pt-3"
+      >
+        <div class="pl-2">
+          <span class="flex flex-col justify-center items-center w-32">
+            <h4 class="text-[#0A033C] font-bold">Connect</h4>
+            <img
+              class="w-32 h-20"
+              src="./assects/Askmeidentity_2-removebg-preview.png"
+              alt="logo"
+            />
+          </span>
+          <p class="text-[9px]">
+            Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally,
+            Nawab Saheb Kunta, Hyd, 500005
+          </p>
+        </div>
+        <div class="pl-2">
+          <h4 class="text-[#0A033C] font-bold">Classes</h4>
+          <ul>
+            <li>Classroom courses</li>
+            <li>Virtual classroom courses</li>
+            <li>E-learning courses</li>
+            <li>Video Courses</li>
+            <li>Offline Courses</li>
+          </ul>
+        </div>
+        <div class="pl-2">
+          <h4 class="text-[#0A033C] font-bold">Community</h4>
+          <ul>
+            <li>Learners</li>
+            <li>Parteners</li>
+            <li>Developers</li>
+            <li>Transactions</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="pl-2">
+          <h4 class="text-[#0A033C] font-bold">Quick links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Professional Education</li>
+            <li>Courses</li>
+            <li>Admissions</li>
+            <li>Testimonial</li>
+            <li>Programs</li>
+          </ul>
+        </div>
+        <div class="pl-2">
+          <h4 class="text-[#0A033C] font-bold">More</h4>
+          <ul>
+            <li>press</li>
+            <li>Investors</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Help</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <section
+          class="bg-gradient-to-tr from-[#A542C800] to-[#0351AE4F] col-span-2 py-5"
+        >
+          <div class="flex gap-3 justify-center">
+            <span class="bg-white rounded-full p-2">
+              <img
+                class="size-5"
+                src="./assects/Instagram.png"
+                alt="Instagram"
+              />
+            </span>
+            <span class="bg-white rounded-full p-2">
+              <img class="size-5" src="./assects/WhatsApp.png" alt="WhatsApp" />
+            </span>
+            <span class="bg-white rounded-full p-2">
+              <img class="size-5" src="./assects/Twitter.png" alt="Twitter" />
+            </span>
+            <span class="bg-white rounded-full p-2">
+              <img class="size-5" src="./assects/LinkedIn.png" alt="LinkedIn" />
+            </span>
+            <span class="bg-white rounded-full p-2">
+              <img class="size-5" src="./assects/YouTube.png" alt="YouTube" />
+            </span>
+          </div>
+        </section>
+        <section
+          class="bg-[#001AFF] bg-opacity-40 text-white col-span-2 text-xs text-center"
+        >
+          Copyright @ 2023 askmeidentity. All Rights Reserved
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
