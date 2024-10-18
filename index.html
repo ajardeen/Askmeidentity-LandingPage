@@ -28,19 +28,35 @@
             colors: {
               clifford: "#da373d",
             },
+            aspectRatio: {
+              "4/3": "16 / 9",
+            },
           },
         },
       };
     </script>
   </head>
 
-  <body class="">
+  <body class="2xl:flex flex-col items-center">
     <!-- navigation -->
-    <nav class="flex justify-between items-center">
-      <span>
-        <img src="./assects/Askmeidentity 2.png" alt="logo" class="w-20 h-10" />
+    <nav class="2xl:w-[100%] flex justify-around gap-52 md:justify-around items-center md:gap-20">
+      <span class="md:mr-32">
+        <img
+          src="./assects/Askmeidentity 2.png"
+          alt="logo"
+          class="w-20 h-10 md:w-36 md:h-20"
+        />
       </span>
-      <span class="flex gap-3 invisible md:visible">
+      <span class="material-symbols-outlined block md:hidden">
+        menu
+        </span>
+      <span class="md:flex gap-6 hidden md:visible font-bold">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Courses</a>
+        <a href="">Contact</a>
+      </span>
+      <span class="md:flex gap-5 hidden md:visible">
         <span class="relative">
           <img src="./assects/nav-Icon3.png" alt="navicon" class="size-5" />
           <p
@@ -52,48 +68,62 @@
         <img src="./assects/nav-Icon1.png" alt="navicon" class="size-5" />
         <img src="./assects/nav-Icon2.png" alt="navicon" class="size-5" />
       </span>
-      <div>
-        <a href="#" class="text-gray-500 underline underline-offset-1">Login</a>
+      <div class=" justify-center items-center gap-5 hidden md:flex">
+        <a
+          href="#"
+          class="text-gray-900 underline underline-offset-1 md:text-lg"
+          >Login</a
+        >
         <button
-          class="bg-gradient-to-br from-[#083F9B] to-[#7F56D9] px-3 py-1 text-white rounded-sm text-sm"
+          class="bg-gradient-to-br from-[#083F9B] to-[#7F56D9] px-3 py-1 text-white rounded-xl md:px-7 md:py-3"
         >
           Signup
         </button>
       </div>
     </nav>
     <!-- hero banner start here  -->
-    <section class="hero-section">
-      <div class="bg-gradient-to-r from-[#04016C] to-[#4A16BD] text-white">
+    <section class="hero-section 2xl:container">
+      <div
+        class="bg-gradient-to-r from-[#04016C]/[0.5] to-[#4A16BD] text-white md:flex "
+      >
         <!-- left  -->
-        <div class="flex flex-col gap-8 pl-3 py-5 relative">
+        <div
+          class="flex flex-col gap-8 pl-3 py-5 relative md:w-[50%] md:justify-right md:gap-14"
+        >
           <img
             src="./assects/Ellipse 8321.png"
             alt="eclipse image"
-            class="absolute left-0 -top-20"
+            class="absolute left-0 -top-20 md:size-[50rem]"
           />
-          <div class="flex flex-col gap-2">
-            <p class="text-xs space-x-3 opacity-60">
+          <div class="flex flex-col gap-2 md:pl-28 md:w-[40em]">
+            <p
+              class="text-xs md:text-base space-x-3 opacity-60 tracking-wider md:p-6 md:pl-3"
+            >
               Successful coaches are visionaries
             </p>
-            <h1 class="text-4xl font-bold">
+            <h1 class="text-4xl font-bold md:text-6xl">
               Good
               <span class="text-[#0E38CD]">coaching</span>
               is good teaching & nothing else.
             </h1>
           </div>
-          <div class="flex text-xs items-center gap-3">
-            <button class="border rounded-md px-4 py-3">View Courses</button>
+          <div
+            class="flex text-xs items-center gap-3 md:gap-8 md:pl-28 md:text-sm"
+          >
+            <button class="border rounded-md px-4 py-3 md:px-6 md:py-4">
+              View Courses
+            </button>
             <a href="#">Get Free Consultation</a>
           </div>
 
           <div>
-            <div class="relative w-fit">
+            <div class="relative w-fit md:pl-28">
               <input
                 type="text"
                 placeholder="What do you want to learn today?"
-                class="w-80 placeholder:text-xs placeholder:text-black pb-1 h-9 rounded-md pl-4"
+                class="w-80 placeholder:text-xs placeholder:text-black pb-1 h-9 rounded-md pl-4 md:h-12 md:w-96"
               />
-              <span class="absolute top-0 right-0">
+              <span class="absolute top-0 right-0 md:right-1 md:top-1">
                 <button
                   class="flex justify-center items-center gap-1 border rounded-lg px-4 py-2 bg-gradient-to-br from-[#3023B2] to-[#7F56D9]"
                 >
@@ -102,22 +132,22 @@
                     alt="search"
                     class="size-4"
                   />
-                  <span class="text-[0.6em] font-bold">Search</span>
+                  <span class="text-[0.6em] font-bold md:text-sm">Search</span>
                 </button>
               </span>
             </div>
           </div>
         </div>
-        <!-- right  -->
-        <div class="relative overflow-hidden h-[450px]">
+        <!-- right  --> 
+        <div class="relative h-[450px] md:w-[50%] md:h-[610px]">
           <img
             src="./assects/Ellipse 8324.png"
             alt="eclipse background"
-            class="absolute"
+            class="absolute md:-top-40"
           />
-          <span class="flex items-center absolute top-0 gap-2">
+          <span class="flex items-center absolute top-0 gap-2 md:top-20">
             <img src="./assects/bar-icon.png" alt="bar image" class="h-20" />
-            <div class="text-[9px] w-36">
+            <div class="text-[9px] w-36 md:text-xs">
               <h6 class="font-bold">Shyam</h6>
               <p>
                 In a coaching role, you ask the questions and rely more on your
@@ -126,46 +156,54 @@
               <p class="text-blue-600">4.9</p>
             </div>
           </span>
-          <span class="absolute -top-12 right-0">
+          <span class="absolute -top-12 right-0 md:right-24 md:top-2">
             <img
               src="./assects/brunette-woman-hugging-laptop_1-removebg.png"
               alt="image"
-              class="bg-transparent h-[500px]"
+              class="bg-transparent h-[500px] md:h-[600px]"
             />
           </span>
+                  <!-- shapes  -->
+        <span class="hidden md:block absolute -bottom-0 -left-10 overflow-y-hidden">
+          <div class=" relative h-[200px] w-[200px]">
+            <img src="./assects/shapes/Rectangle 8673.png" alt="shapes" class="absolute top-0 w-[500px] h-[300px]">
+            <img src="./assects/shapes/Rectangle 8675.png" alt="shapes" class="absolute top-5 w-[170px] left-3">
+            <img src="./assects/shapes/Rectangle 8674.png" alt="shapes" class="absolute top-10 w-[150px] left-6">
+          </div>
+        </span>
         </div>
+
       </div>
       <!-- hero banner2 start here -->
-      <div
-        class="bg-[#2E08C7] flex gap-5 p-5 items-center justify-center w-[100%]"
+      <div class="bg-[#2E08C7] flex gap-5 p-5 items-center justify-center md:justify-evenly md:p-8 w-[100%] md:px-16 z-20"
       >
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-8 md:w-24"
           src="./assects/spotify-brand.png"
           alt="brand image"
         />
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-8 md:w-24"
           src="./assects/amazon-brand.png"
           alt="brand image"
         />
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-8 md:w-24"
           src="./assects/spotify-brand.png"
           alt="brand image"
         />
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-10 md:w-24"
           src="./assects/cisco-brand.png"
           alt="brand image"
         />
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-8 md:w-24"
           src="./assects/logitech-brand.png"
           alt="brand image"
         />
         <img
-          class="w-10 h-3"
+          class="w-10 h-3 md:h-8 md:w-24"
           src="./assects/amazon-brand.png"
           alt="brand image"
         />
@@ -173,7 +211,9 @@
     </section>
 
     <!-- Featured Course  -->
-    <div class="flex flex-col items-center mt-5">
+    <div
+      class="2xl:container bg-gradient-to-r from-[#D9ECFF] to-[#F0F3FF00] flex flex-col  items-center pt-5 md:pt-20"
+    >
       <header class="font-bold text-center flex justify-center">
         <div>
           <img
@@ -183,17 +223,17 @@
           />
         </div>
         <div>
-          <h2 class="text-2xl">
+          <h2 class="text-2xl md:text-4xl">
             Featured <span class="text-blue-500"> Course</span>
           </h2>
-          <p class="text-sm tracking-widest font-medium">
+          <p class="text-sm tracking-widest md:text-base font-bold">
             THE FEATURED COURSES ARE WE INVENTED OUR TEACHING PART
           </p>
         </div>
       </header>
       <!-- cards banner  -->
       <div
-        class="grid grid-cols-1 gap-10 place-items-center md:px-40 py-20 md:grid-cols-3"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-10 place-items-center md:px-40 py-20 md:grid-cols-2 auto-rows-max"
       >
         <!-- 1  -->
         <div class="rounded-lg shadow-md w-[20rem]">
@@ -298,13 +338,15 @@
           </div>
         </div>
       </div>
-      <button class="bg-blue-700 text-white py-3 px-5 rounded-xl mb-20">
+      <button
+        class="bg-gradient-to-r from-[#083F9B] to-[#7F56D9] text-white py-3 px-5 rounded-xl mb-20"
+      >
         Explore courses
       </button>
     </div>
     <!-- why learn banner  -->
     <div
-      class="relative bg-blue-400 text-white flex flex-col items-center pb-20"
+      class="2xl:container relative bg-gradient-to-r from-[#739FE8E5] to-[#4F18CAE5] text-white flex flex-col items-center pb-20"
     >
       <header class="py-20 md:w-[30%] w-[80%]">
         <h1
@@ -318,30 +360,15 @@
         </p>
       </header>
 
-      <div class="md:flex md:justify-around items-center justify-center">
-        <!-- side design  -->
-        <div class="absolute size-32 top-20 left-0 flex invisible md:visible">
-          <img
-            class="absolute left-0"
-            src="assects/curve/Ellipse 8323.png"
-            alt=""
-          />
-          <img
-            class="absolute top-4 left-"
-            src="assects/curve/Rectangle 8680.png"
-            alt=""
-          />
-          <img
-            class="absolute left-4 w-60"
-            src="assects/curve/Rectangle 8682.png"
-            alt=""
-          />
-          <img
-            class="absolute -top-5 left-7"
-            src="assects/curve/Rectangle 8681.png"
-            alt=""
-          />
-        </div>
+      <div class="md:flex md:justify-around items-center justify-center relative">
+                   <!-- shapes  -->
+                   <span class="hidden md:block absolute -left-44 -top-40 overflow-y-hidden rotate-90">
+                    <div class=" relative h-[200px] w-[200px]">
+                      <img src="./assects/shapes/Rectangle 8673.png" alt="shapes" class="absolute top-0 w-[500px] h-[300px]">
+                      <img src="./assects/shapes/Rectangle 8675.png" alt="shapes" class="absolute top-5 w-[170px] left-3">
+                      <img src="./assects/shapes/Rectangle 8674.png" alt="shapes" class="absolute top-10 w-[150px] left-6">
+                    </div>
+                  </span>
         <!-- 1 -->
         <div
           class="gap-4 md:px-20 font-bold text-center flex flex-col justify-center items-center"
@@ -389,7 +416,9 @@
       </div>
     </div>
     <!-- top categories  -->
-    <div class="flex flex-col items-center bg-[#D9ECFF] pb-20">
+    <div
+      class="2xl:container flex flex-col items-center bg-gradient-to-t from-[#D9ECFF] to-[#D9ECFF]/[.06] pb-20"
+    >
       <header class="py-20 md:w-[30%] w-[80%]">
         <h1 class="text-center text-3xl font-bold">
           Top <span class="text-blue-800">Categories</span>
@@ -462,12 +491,12 @@
     </div>
 
     <!-- subscribe banner  -->
-    <div class="md:py-10 w-[100%]">
+    <div class="md:py-10 w-[100%] flex justify-center items-center">
       <div
-        class="text-white bg-indigo-600 flex md:justify-end md:gap-x-10 pt-5 md:pt-28 md:mr-5 rounded-r-lg md:pr-10"
+        class="text-white bg-gradient-to-bl rounded-lg from-[#E441FF] from-30% via-[#1901F8]/[0.6] via-60% to-[#00B3FF] to-100% flex justify-center md:gap-x-10 pt-5 rounded-r-lg md:w-[1100px] md:p-10 h-64 md:h-max"
       >
         <!-- left  -->
-        <div class="w-40 h-64 relative invisible md:visible">
+        <div class="w-40 h-64 relative hidden md:block">
           <img
             class="size-10 absolute top-0 left-0"
             src="assects/p1.svg"
@@ -491,7 +520,7 @@
         </div>
         <!-- center sub  -->
         <div
-          class="text-center w-[20rem] md:w-[42rem] grid gap-3 md:place-items-center"
+          class="text-center w-fit md:w-[42rem] grid gap-3 place-items-center"
         >
           <h1 class="font-bold text-2xl md:text-4xl">
             Subscribe For Get Update <br />
@@ -514,7 +543,7 @@
           </div>
         </div>
         <!-- right  -->
-        <div class="w-40 h-64 relative invisible md:visible">
+        <div class="w-40 h-64 relative hidden md:block">
           <img
             class="size-10 absolute top-0 right-0"
             src="assects/p4.svg"
@@ -566,86 +595,106 @@
     </div>
 
     <!-- testimonial -->
-    <div class="flex flex-col items-center bg-[#D9ECFF] md:pb-20">
-      <header class="py-20 md:w-[30%] w-[100%]">
+    <div class="2xl:container flex flex-col items-center bg-[#D9ECFF] md:pb-5 ">
+      <header class="py-20 md:w-[30%] w-[100%] relative">
         <h1 class="text-blue-800 my-7 text-center text-3xl font-bold">
           Testimonials
         </h1>
         <p class="text-center font-bold">What our student say about us</p>
+        <img src="./assects/Ellipse 1217.png" alt="eclipis" class="hidden md:block size-16 absolute top-[50%] -left-96">
       </header>
-      <section class="flex flex-col gap-7">
-        <div
-          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
-        >
-          <img
-            src="./assects/photo last.png"
-            alt="profile"
-            class="w-9 h-10 absolute -top-5 left-32"
-          />
-          <p>
-            Such an amazing trainer and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning
-          </p>
+      <section class="flex flex-col gap-10 md:h-[20rem] md:overflow-scroll xl:overflow-visible">
+        <div class="relative">
+          <div class="xl:absolute md:left-40 md:top-5 mb-5">
+            <div
+              class="text-[#7E7EAA] bg-white w-[18rem] md:w-[35rem] p-10 flex flex-col gap-5 relative"
+            >
+              <img
+                src="./assects/photo last.png"
+                alt="profile"
+                class="w-9 h-10 absolute -top-5 left-32 md:left-60 md:w-10 md:h-12"
+              />
+              <p>
+                Such an amazing trainer and easily understand the entire
+                syllabus, and the guidence will be super and good to the way of
+                explaning
+              </p>
 
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
-        >
-          <img
-            src="./assects/photo last.png"
-            alt="profile"
-            class="w-9 h-10 absolute -top-5 left-32"
-          />
-          <p>
-            Such an amazing trainer and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning
-          </p>
+          <div class="xl:absolute md:-top-10 md:-left-72 md:z-20 mb-5">
+            <div
+              class="text-[#7E7EAA] bg-white w-[18rem] md:w-[35rem] p-10 flex flex-col gap-5 relative"
+            >
+              <img
+                src="./assects/photo last.png"
+                alt="profile"
+                class="w-9 h-10 absolute -top-5 left-32 md:left-60 md:w-10 md:h-12"
+              />
+              <p>
+                Such an amazing trainer and easily understand the entire
+                syllabus, and the guidence will be super and good to the way of
+                explaning
+              </p>
 
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="text-[#7E7EAA] bg-white w-[18rem] p-10 flex flex-col gap-5 relative"
-        >
-          <img
-            src="./assects/photo last.png"
-            alt="profile"
-            class="w-9 h-10 absolute -top-5 left-32"
-          />
-          <p>
-            Such an amazing trainer and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning
-          </p>
+          <div class="xl:absolute md:right-40 md:top-5">
+            <div
+              class="text-[#7E7EAA] bg-white w-[18rem] md:w-[35rem] p-10 flex flex-col gap-5 relative"
+            >
+              <img
+                src="./assects/photo last.png"
+                alt="profile"
+                class="w-9 h-10 absolute -top-5 left-32 md:left-60 md:w-10 md:h-12"
+              />
+              <p>
+                Such an amazing trainer and easily understand the entire
+                syllabus, and the guidence will be super and good to the way of
+                explaning
+              </p>
 
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <div class="flex justify-end w-[100%]">
+        <span>
+        <img src="./assects/Back Arrow.png" alt="arrow left" class="rotate-180">
+      </span>
+    <span>
+        <img src="./assects/Back Arrow.png" alt="arrow right">
+      </span>
+      </div>
     </div>
 
     <!-- footer  -->
-    <footer>
+    <footer class="2xl:w-[100%]">
       <section
-        class="grid bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 pt-3"
+        class="2xl:w-[100%] grid md:grid-cols-6  bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 pt-3"
       >
-        <div class="pl-2">
+        <div class="pl-5 md:col-span-2 md:pl-20">
           <span class="flex flex-col justify-center items-center w-32">
             <h4 class="text-[#0A033C] font-bold">Connect</h4>
             <img
@@ -654,12 +703,12 @@
               alt="logo"
             />
           </span>
-          <p class="text-[9px]">
+          <p class="text-[9px] md:text-[12px] md:w-[80%]">
             Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally,
             Nawab Saheb Kunta, Hyd, 500005
           </p>
         </div>
-        <div class="pl-2">
+        <div class="pl-5">
           <h4 class="text-[#0A033C] font-bold">Classes</h4>
           <ul>
             <li>Classroom courses</li>
@@ -669,7 +718,7 @@
             <li>Offline Courses</li>
           </ul>
         </div>
-        <div class="pl-2">
+        <div class="pl-5">
           <h4 class="text-[#0A033C] font-bold">Community</h4>
           <ul>
             <li>Learners</li>
@@ -679,7 +728,7 @@
             <li>Blog</li>
           </ul>
         </div>
-        <div class="pl-2">
+        <div class="pl-5">
           <h4 class="text-[#0A033C] font-bold">Quick links</h4>
           <ul>
             <li>Home</li>
@@ -690,7 +739,7 @@
             <li>Programs</li>
           </ul>
         </div>
-        <div class="pl-2">
+        <div class="pl-5">
           <h4 class="text-[#0A033C] font-bold">More</h4>
           <ul>
             <li>press</li>
@@ -702,7 +751,7 @@
           </ul>
         </div>
         <section
-          class="bg-gradient-to-tr from-[#A542C800] to-[#0351AE4F] col-span-2 py-5"
+          class="bg-gradient-to-tr from-[#A542C800] to-[#0351AE4F] col-span-2 py-5 md:col-span-6"
         >
           <div class="flex gap-3 justify-center">
             <span class="bg-white rounded-full p-2">
@@ -727,7 +776,7 @@
           </div>
         </section>
         <section
-          class="bg-[#001AFF] bg-opacity-40 text-white col-span-2 text-xs text-center"
+          class="bg-[#001AFF] bg-opacity-40 text-white col-span-2 text-xs text-center md:col-span-6"
         >
           Copyright @ 2023 askmeidentity. All Rights Reserved
         </section>
