@@ -13,6 +13,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .checked {
         color: orange;
@@ -28,8 +43,17 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              DMSeriff: ["DM Serif Text,sans-serif"],
+              Righteous: ['"Righteous"', "serif"],
+              Saira: ['"Saira",serif'],
+              Rowdies: ["Rowdies", "seri"],
+            },
             aspectRatio: {
               "4/3": "16 / 9",
+            },
+            fontWeight: {
+              Normal: 10,
             },
           },
         },
@@ -49,7 +73,7 @@
           class="w-20 h-10 md:w-36 md:h-20"
         />
       </span>
-      <span class="xl:flex gap-6 hidden xl:visible font-bold">
+      <span class="font-Righteous xl:flex gap-6 hidden xl:visible">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
@@ -68,11 +92,14 @@
           <img src="./assects/nav-Icon1.png" alt="navicon" class="size-5" />
           <img src="./assects/nav-Icon2.png" alt="navicon" class="size-5" />
         </span>
-        <span class="material-symbols-outlined block xl:hidden" id="menu">
+        <span
+          class="material-symbols-outlined block xl:hidden cursor-pointer"
+          id="menu"
+        >
           menu
         </span>
       </div>
-      <div class="justify-center items-center gap-5 hidden xl:flex">
+      <div class="font-Saira justify-center items-center gap-5 hidden xl:flex">
         <a
           href="#"
           class="text-gray-900 underline underline-offset-1 md:text-lg"
@@ -90,7 +117,7 @@
         class="absolute hidden xl:hidden z-50 w-[100%] h-fit py-10 flex flex-col gap-7 justify-center items-center top-10 md:top-20 right-0 bg-white"
         id="infoElement"
       >
-        <span class="flex flex-col gap-6 font-bold" id="linkList">
+        <span class="flex flex-col gap-6" id="linkList">
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#courses">Courses</a>
@@ -111,7 +138,7 @@
       </span>
     </nav>
     <!-- hero banner start here  -->
-    <section class="hero-section 2xl:container">
+    <section class="hero-section 2xl:container font-Righteous font-normal">
       <div
         class="bg-gradient-to-r from-[#04016C]/[0.5] to-[#4A16BD] text-white lg:flex"
       >
@@ -130,7 +157,7 @@
             >
               Successful coaches are visionaries
             </p>
-            <h1 class="text-4xl md:text-5xl font-bold lg:text-6xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl">
               Good
               <span class="text-[#0E38CD]">coaching</span>
               is good teaching & nothing else.
@@ -161,7 +188,7 @@
                     alt="search"
                     class="size-4"
                   />
-                  <span class="text-[0.6em] font-bold md:text-sm">Search</span>
+                  <span class="text-[0.6em] md:text-sm">Search</span>
                 </button>
               </span>
             </div>
@@ -177,7 +204,7 @@
           <span class="flex items-center absolute top-0 gap-2 md:top-20">
             <img src="./assects/bar-icon.png" alt="bar image" class="h-20" />
             <div class="text-[9px] w-36 md:text-xs">
-              <h6 class="font-bold">Shyam</h6>
+              <h6 class="">Shyam</h6>
               <p>
                 In a coaching role, you ask the questions and rely more on your
                 staff, who become the experts, to provide the information.
@@ -258,7 +285,7 @@
       id="courses"
       class="2xl:container bg-gradient-to-t from-[#D9ECFF] from-0% to-[#ffffff] to-70% flex flex-col items-center pt-5 md:pt-20"
     >
-      <header class="font-bold text-center flex justify-center">
+      <header class="text-center flex justify-center">
         <div>
           <img
             class="size-12 relative -left-36"
@@ -267,115 +294,117 @@
           />
         </div>
         <div>
-          <h2 class="text-2xl md:text-4xl">
+          <h2 class="font-Rowdies text-2xl md:text-4xl">
             Featured <span class="text-blue-500"> Course</span>
           </h2>
-          <p class="text-sm tracking-widest md:text-base font-bold">
+          <p
+            class="font-Righteous font-normal text-sm tracking-widest md:text-base"
+          >
             THE FEATURED COURSES ARE WE INVENTED OUR TEACHING PART
           </p>
         </div>
       </header>
       <!-- cards banner  -->
       <div
-        class="grid grid-cols-1 lg:grid-cols-3 gap-10 place-items-center py-20 md:grid-cols-2 auto-rows-max"
+        class="font-Saira font-semibold grid grid-cols-1 lg:grid-cols-3 gap-10 place-items-center py-20 md:grid-cols-2 auto-rows-max"
       >
         <!-- 1  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img1.png" alt="img1" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>1,957 Students</p>
               <p>01h 59m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               Motion Graphics: Create a Nice Typography Animation
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
           </div>
         </div>
         <!-- 2  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img2.png" alt="img2" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>9,575 Students</p>
               <p>01h 59m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               Advance PHP knowledge with JS to make smart web
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
           </div>
         </div>
         <!-- 3  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img3.png" alt="img1" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>2,957 Students</p>
               <p>02h 49m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               Education Software and PHP and JS System Script
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
           </div>
         </div>
         <!-- 4  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img4.png" alt="img4" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>5,457 Students</p>
               <p>01h 49m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               The Complete Financial Analyst Training & Investing
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
           </div>
         </div>
         <!-- 5  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img5.png" alt="img5" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>595 Students</p>
               <p>01h 49m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               Marketing 2023: Complete Guide To Instagram Growth
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
           </div>
         </div>
         <!-- 6  -->
-        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem]">
+        <div class="rounded-lg shadow-md w-[18rem] md:w-[20rem] bg-white">
           <img src="assects/img6.png" alt="img6" />
           <div class="text-xs px-3 flex flex-col text-start gap-5">
             <span class="flex justify-between mt-8">
               <p>458 Students</p>
               <p>03h 00m</p>
             </span>
-            <h1 class="font-bold text-base w-[80%]">
+            <h1 class="text-base w-[80%]">
               Learn 3D Modelling and Design for Beginners
             </h1>
-            <span class="flex justify-between font-bold py-4 px-2">
+            <span class="flex justify-between py-4 px-2">
               <p class="text-base">Rs.499</p>
               <img src="assects/trolley.png" alt="trolley" class="size-3" />
             </span>
@@ -383,7 +412,7 @@
         </div>
       </div>
       <button
-        class="bg-gradient-to-r from-[#083F9B] to-[#7F56D9] text-white py-3 px-5 rounded-xl mb-20"
+        class="font-Righteous font-normal bg-gradient-to-r from-[#083F9B] to-[#7F56D9] text-white py-3 px-5 rounded-xl mb-20"
       >
         Explore courses
       </button>
@@ -396,11 +425,11 @@
         class="py-20 xl:w-[30%] w-[80%] md:w-[60%] lg:w-[50%] text-center"
       >
         <h1
-          class="md:text-start pl-5 text-2xl text-center md:text-3xl font-bold"
+          class="font-Righteous font-normal md:text-start pl-5 text-2xl text-center md:text-3xl"
         >
           Why <span class="text-blue-800">learn</span> with our courses?
         </h1>
-        <p class="text-center">
+        <p class="font-Saira font-normal text-center">
           We are providing the best courses and top classes And extradinery
           placement training.....
         </p>
@@ -433,7 +462,7 @@
         </span>
         <!-- 1 -->
         <div
-          class="gap-4 md:px-20 font-bold text-center flex flex-col justify-center items-center"
+          class="gap-4 md:px-20 text-center flex flex-col justify-center items-center"
         >
           <img src="assects/Icon1.svg" alt="1" />
           <p class="text-lg">01.Learn</p>
@@ -449,7 +478,7 @@
         />
         <!-- 2 -->
         <div
-          class="gap-4 px-20 font-bold text-center flex flex-col justify-center items-center"
+          class="gap-4 px-20 text-center flex flex-col justify-center items-center"
         >
           <img src="assects/Icon2.svg" alt="1" />
           <p class="text-lg">02.Graduate</p>
@@ -465,7 +494,7 @@
         />
         <!-- 3 -->
         <div
-          class="gap-4 px-20 font-bold text-center flex flex-col justify-center items-center"
+          class="gap-4 px-20 text-center flex flex-col justify-center items-center"
         >
           <img src="assects/Icon3.svg" alt="1" />
           <p class="text-lg">03.Work</p>
@@ -479,10 +508,10 @@
     </div>
     <!-- top categories  -->
     <div
-      class="2xl:container flex flex-col items-center bg-gradient-to-t from-[#D9ECFF] to-[#D9ECFF]/[.06] pb-20"
+      class="font-Righteous font-normal text-[#324361] 2xl:container flex flex-col items-center bg-gradient-to-t from-[#D9ECFF] to-[#D9ECFF]/[.06] pb-20"
     >
       <header class="py-20 md:w-[30%] w-[80%]">
-        <h1 class="text-center text-3xl font-bold">
+        <h1 class="text-center text-3xl">
           Top <span class="text-blue-800">Categories</span>
         </h1>
         <p class="text-center">100+ unique online course list design</p>
@@ -492,7 +521,7 @@
         class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-1 md:gap-3"
       >
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a1.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -502,7 +531,7 @@
           <p>25 Courses</p>
         </div>
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a2.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -512,7 +541,7 @@
           <p>16 Courses</p>
         </div>
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a3.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -522,7 +551,7 @@
           <p>76 Courses</p>
         </div>
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a4.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -532,7 +561,7 @@
           <p>22 Courses</p>
         </div>
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a5.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -542,7 +571,7 @@
           <p>110 Courses</p>
         </div>
         <div
-          class="bg-white rounded-lg font-bold p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
+          class="bg-white rounded-lg p-10 flex flex-col gap-4 md:gap-10 justify-center items-center text-center"
         >
           <img class="size-14 md:size-16" src="assects/a6.svg" alt="1" />
           <h1 class="text-sm md:text-xl">
@@ -557,7 +586,7 @@
     <!-- subscribe banner  -->
     <div
       id="contact"
-      class="md:py-10 xl:w-[100%] flex justify-center items-center"
+      class="font-Righteous font-Normal md:py-10 xl:w-[100%] flex justify-center items-center"
     >
       <div
         class="text-white w-[100%] bg-gradient-to-bl rounded-lg from-[#E441FF] from-30% via-[#1901F8]/[0.6] via-60% to-[#00B3FF] to-100% flex justify-center md:gap-x-10 pt-5 rounded-r-lg md:w-[1100px] md:p-10 h-52 py-4 md:h-max"
@@ -589,7 +618,7 @@
         <div
           class="text-center w-fit lg:w-[42rem] grid gap-3 place-items-center"
         >
-          <h1 class="font-bold text-2xl md:text-4xl">
+          <h1 class="text-2xl md:text-4xl">
             Subscribe For Get Update <br />
             Every New Courses
           </h1>
@@ -662,12 +691,12 @@
     </div>
 
     <!-- testimonial -->
-    <div class="2xl:container flex flex-col items-center bg-[#D9ECFF] md:pb-5">
+    <div
+      class="font-Righteous font-normal 2xl:container flex flex-col items-center bg-[#D9ECFF] md:pb-5"
+    >
       <header class="py-20 md:w-[30%] w-[100%] relative">
-        <h1 class="text-blue-800 my-7 text-center text-3xl font-bold">
-          Testimonials
-        </h1>
-        <p class="text-center font-bold">What our student say about us</p>
+        <h1 class="text-blue-800 my-7 text-center text-3xl">Testimonials</h1>
+        <p class="text-center">What our student say about us</p>
         <img
           src="./assects/Ellipse 1217.png"
           alt="eclipis"
@@ -767,13 +796,13 @@
     </div>
 
     <!-- footer  -->
-    <footer class="2xl:w-[100%]" id="about">
+    <footer class="font-Righteous font-normal 2xl:w-[100%]" id="about">
       <section
         class="2xl:w-[100%] grid md:grid-cols-6 bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 pt-3"
       >
         <div class="pl-5 md:col-span-2 md:pl-20">
           <span class="flex flex-col justify-center items-center w-32">
-            <h4 class="text-[#0A033C] font-bold">Connect</h4>
+            <h4 class="text-[#0A033C]">Connect</h4>
             <img
               class="w-32 h-20"
               src="./assects/Askmeidentity_2-removebg-preview.png"
@@ -786,7 +815,7 @@
           </p>
         </div>
         <div class="pl-5">
-          <h4 class="text-[#0A033C] font-bold">Classes</h4>
+          <h4 class="text-[#0A033C]">Classes</h4>
           <ul>
             <li>Classroom courses</li>
             <li>Virtual classroom courses</li>
@@ -796,7 +825,7 @@
           </ul>
         </div>
         <div class="pl-5">
-          <h4 class="text-[#0A033C] font-bold">Community</h4>
+          <h4 class="text-[#0A033C]">Community</h4>
           <ul>
             <li>Learners</li>
             <li>Parteners</li>
@@ -806,7 +835,7 @@
           </ul>
         </div>
         <div class="pl-5">
-          <h4 class="text-[#0A033C] font-bold">Quick links</h4>
+          <h4 class="text-[#0A033C]">Quick links</h4>
           <ul>
             <li>Home</li>
             <li>Professional Education</li>
@@ -817,7 +846,7 @@
           </ul>
         </div>
         <div class="pl-5">
-          <h4 class="text-[#0A033C] font-bold">More</h4>
+          <h4 class="text-[#0A033C]">More</h4>
           <ul>
             <li>press</li>
             <li>Investors</li>
