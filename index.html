@@ -34,6 +34,7 @@
       }
       .hero-section {
         background-image: url("./assects/hero-BACKGROUND.png");
+        background-size: cover;
       }
     </style>
     <script>
@@ -64,7 +65,7 @@
   <body class="2xl:flex flex-col items-center">
     <!-- navigation -->
     <nav
-      class="w-[100%] flex justify-between xl:justify-around items-center md:gap-20 sticky top-0 bg-white z-[100]"
+      class="w-[100%] flex justify-between xl:justify-around items-center md:gap-20 sticky top-0 bg-white z-[100] pr-2"
     >
       <span class="md:mr-32">
         <img
@@ -79,7 +80,7 @@
         <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
       </span>
-      <div class="flex gap-10">
+      <div class="flex gap-10 items-center">
         <span class="flex gap-5">
           <span class="relative size-5">
             <img src="./assects/nav-Icon3.png" alt="navicon" class="size-5" />
@@ -144,7 +145,7 @@
       >
         <!-- left  -->
         <div
-          class="flex flex-col gap-8 xl:pl-3 py-5 relative md:w-[50%] md:justify-right md:gap-14"
+          class="flex flex-col gap-8 pl-3 py-5 relative md:w-[50%] md:justify-right md:gap-14"
         >
           <img
             src="./assects/Ellipse 8321.png"
@@ -157,7 +158,7 @@
             >
               Successful coaches are visionaries
             </p>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl lg:w-[500px]">
               Good
               <span class="text-[#0E38CD]">coaching</span>
               is good teaching & nothing else.
@@ -221,7 +222,7 @@
           </span>
           <!-- shapes  -->
           <span
-            class="hidden lg:block absolute -bottom-0 -left-10 overflow-y-hidden"
+            class="hidden xl:block absolute -bottom-0 -left-10 overflow-y-hidden"
           >
             <div class="relative h-[200px] w-[200px]">
               <img
@@ -798,9 +799,9 @@
     <!-- footer  -->
     <footer class="font-Righteous font-normal 2xl:w-[100%]" id="about">
       <section
-        class="2xl:w-[100%] grid md:grid-cols-6 bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 pt-3"
+        class="2xl:w-[100%] grid bg-gradient-to-r from-[#931BBDD9] to-[#477AE3] grid-cols-2 xl:grid-cols-6 gap-x-1 gap-y-2 pt-3"
       >
-        <div class="pl-5 md:col-span-2 md:pl-20">
+        <div class="pl-5 md:col-span-2 lg:pl-20">
           <span class="flex flex-col justify-center items-center w-32">
             <h4 class="text-[#0A033C] font-thin text-2xl">Connect</h4>
             <img
@@ -809,7 +810,7 @@
               alt="logo"
             />
           </span>
-          <p class="text-[9px] md:text-[12px] md:w-[80%]">
+          <p class="text-[9px] md:text-[12px] w-[170px]">
             Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally,
             Nawab Saheb Kunta, Hyd, 500005
           </p>
